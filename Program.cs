@@ -121,7 +121,7 @@ namespace lists {
 			// Generates 25 random numbers.
 			for(int index = 0; index < numbers.Count - 1; index++) {
 				foreach(int number in numbers){
-					Console.WriteLine(numbers);
+					Console.WriteLine(number);
 				}
 			}
 		}
