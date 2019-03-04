@@ -1,0 +1,11 @@
+/Users/zac_crawford/workspace/csharp/lists/bin/Debug/netcoreapp2.2/lists.deps.json
+/Users/zac_crawford/workspace/csharp/lists/bin/Debug/netcoreapp2.2/lists.runtimeconfig.json
+/Users/zac_crawford/workspace/csharp/lists/bin/Debug/netcoreapp2.2/lists.runtimeconfig.dev.json
+/Users/zac_crawford/workspace/csharp/lists/bin/Debug/netcoreapp2.2/lists.dll
+/Users/zac_crawford/workspace/csharp/lists/bin/Debug/netcoreapp2.2/lists.pdb
+/Users/zac_crawford/workspace/csharp/lists/obj/Debug/netcoreapp2.2/lists.csprojAssemblyReference.cache
+/Users/zac_crawford/workspace/csharp/lists/obj/Debug/netcoreapp2.2/lists.csproj.CoreCompileInputs.cache
+/Users/zac_crawford/workspace/csharp/lists/obj/Debug/netcoreapp2.2/lists.AssemblyInfoInputs.cache
+/Users/zac_crawford/workspace/csharp/lists/obj/Debug/netcoreapp2.2/lists.AssemblyInfo.cs
+/Users/zac_crawford/workspace/csharp/lists/obj/Debug/netcoreapp2.2/lists.dll
+/Users/zac_crawford/workspace/csharp/lists/obj/Debug/netcoreapp2.2/lists.pdb
