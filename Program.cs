@@ -12,7 +12,7 @@ namespace lists {
 		public static void Main(string[] args) {
 
 			Console.WriteLine("Hello World!");
-			Console.WriteLine();  // Blank line. Separates the output for clarity.
+			Console.WriteLine();  // Blank line. Separates the console output for clarity.
 
 			// Make a list called planetList.
 			List<string> planetList = new List<string>(){"Mercury", "Mars"};
@@ -26,6 +26,7 @@ namespace lists {
 			Console.WriteLine();  // Blank line.
 
 			// I want to add the next two planets to the list as strings.
+			// Add() places the items at the end of the list.
 			planetList.Add("Jupiter");
 			planetList.Add("Saturn");
 
@@ -36,7 +37,7 @@ namespace lists {
 			}
 			Console.WriteLine();  // Blank line.
 
-			// #2 - Make a new list with thr last two planets- "Uranus" and "Neptune".
+			// #2 - Make a new list with the last two planets- "Uranus" and "Neptune".
 			List<string> lastTwoPlanetList = new List<string>(){"Uranus", "Neptune"};
 
 			// #3 - Combine planetList and lastTwoPlanetList using AddRange().
@@ -51,7 +52,7 @@ namespace lists {
 			Console.WriteLine();  // Blank line.
 
 			// #4 - Use Insert() to add Earth, and Venus in the correct order.
-			// Test run with venus first at position 2, index 1.
+			// Test run with venus first placed at position 2, index 1.
 			planetList.Insert(1,"Venus");
 
 			foreach(string planet in planetList) {
@@ -60,7 +61,7 @@ namespace lists {
 			}
 			Console.WriteLine();  // Blank line.
 
-			// Run with earth at position 3, index 2.
+			// Run with earth placed at position 3, index 2.
 			planetList.Insert(2,"Earth");
 
 			foreach(string planet in planetList) {
@@ -68,6 +69,61 @@ namespace lists {
 				Console.WriteLine(planet);
 			}
 			Console.WriteLine();  // Blank line.
+
+			// #5 - Use Add() again to add Pluto to the end of the list.
+			// Add() places items at the end of the list by default.
+			planetList.Add("Pluto");
+
+			foreach(string planet in planetList) {
+				// Prints all nine planets in the new planetList.
+				Console.WriteLine(planet);
+			}
+			Console.WriteLine();  // Blank line.
+
+			/*
+			#6 - Slice planetList using GetRange() in order to extract the rocky planets into a new list called rockyPlanets. The rocky planets will remain in the original planetList. There are four to be added - Mercury, Venus, Earth, Mars.
+			Takes two arguments:
+			 - first is start position (index 0),
+			 - second is count to get (4).
+			*/
+			List<string> rockyPlanets = planetList.GetRange(0,4);
+
+			foreach(string planet in rockyPlanets) {
+				// Prints all four planets in the new rockyPlanets.
+				Console.WriteLine(planet);
+			}
+			Console.WriteLine();  // Blank line.
+
+			// #7 - Pluto is now a dwarf planet, so use the Remove() method to eliminate it from the end of planetList.
+			planetList.Remove("Pluto");
+
+			foreach(string planet in planetList) {
+				// Prints all eight planets in the new planetList.
+				Console.WriteLine(planet);
+			}
+			Console.WriteLine();  // Blank line.
+
+			// Practice: Random Numbers
+			// Instructions:
+			// #1 - Use the following code to create a list of random numbers. Each number will be between 0 and 9.
+			Random random = new Random();
+			// Will return a positive interger between 0 and 10.
+			List<int> numbers = new List<int> {
+				random.Next(10),
+				random.Next(10),
+				random.Next(10),
+				random.Next(10),
+				random.Next(10),
+			};
+			Console.WriteLine(numbers);
+
+			// #2 - Use a for loop to iterate over all numbers between 0 and numbers.Count - 1.
+			// Generates 25 random numbers.
+			for(int index = 0; index < numbers.Count - 1; index++) {
+				foreach(int number in numbers){
+					Console.WriteLine(numbers);
+				}
+			}
 		}
 	}
 }
